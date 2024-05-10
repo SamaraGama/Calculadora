@@ -13,7 +13,7 @@ namespace Calculadora
             filaOperacoes.Enqueue(new Operacoes { valorA = 14, valorB = 8, operador = '-' });
             filaOperacoes.Enqueue(new Operacoes { valorA = 5, valorB = 6, operador = '*' });
             filaOperacoes.Enqueue(new Operacoes { valorA = 2147483647, valorB = 2, operador = '+' });
-            filaOperacoes.Enqueue(new Operacoes { valorA = 18, valorB = 3, operador = '/' }); //Implemente o calculo de divisao
+            filaOperacoes.Enqueue(new Operacoes { valorA = 18, valorB = 3, operador = '/' });
 
             Calculadora calculadora = new Calculadora();
 

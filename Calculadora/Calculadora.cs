@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Numerics;
 namespace Calculadora
 {
     public class Calculadora
@@ -16,19 +17,19 @@ namespace Calculadora
             }
             return operacao;
         }
-        public int soma(Operacoes operacao)
+        public BigInteger soma(Operacoes operacao)
         {
             return operacao.valorA + operacao.valorB;
         }
-        public int subtracao(Operacoes operacao)
+        public BigInteger subtracao(Operacoes operacao)
         {
             return operacao.valorA - operacao.valorB;
         }
-        public int multiplicacao(Operacoes operacao)
+        public BigInteger multiplicacao(Operacoes operacao)
         {
             return operacao.valorA * operacao.valorB;
         }
-        public int divisao(Operacoes operacao)
+        public BigInteger divisao(Operacoes operacao)
         {
             return operacao.valorA / operacao.valorB;
         }

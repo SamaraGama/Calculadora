@@ -1,11 +1,13 @@
 ﻿using System;
+using System.Numerics;
+
 namespace Calculadora
 {
     public class Operacoes
     {
-        public int valorA { get; set; }
+        public BigInteger valorA { get; set; }
         public char operador { get; set; }
-        public int valorB { get; set; }
-        public decimal resultado { get; set; }
+        public BigInteger valorB { get; set; }
+        public BigInteger resultado { get; set; }
     }
 }
