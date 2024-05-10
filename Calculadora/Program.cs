@@ -17,16 +17,11 @@ namespace Calculadora
 
             Calculadora calculadora = new Calculadora();
 
-            
-            while (filaOperacoes.Count >= 0)
+            foreach (var operacao in filaOperacoes)
             {
-                Operacoes operacao = filaOperacoes.Peek();
                 calculadora.calcular(operacao);
-                Console.WriteLine("{0} {1} {2} = {3}", operacao.valorA,operacao.operador,operacao.valorB, operacao.resultado);
+                Console.WriteLine("{0} {1} {2} = {3}", operacao.valorA, operacao.operador, operacao.valorB, operacao.resultado);
             }
-
-          
-           
         }
     }
 }
